@@ -8,7 +8,7 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>PROJETO 2 TECWEB</h1>
+      <h1>PROJETO 3 TECWEB</h1>
       <p>FELIPE LEMOS</p>
       <div className='hero-btns'>
         <Button
@@ -16,7 +16,7 @@ function HeroSection() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          SE INSCREVER
+          CADASTRAR
         </Button>
 
       </div>

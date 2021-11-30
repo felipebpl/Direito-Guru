@@ -2,57 +2,50 @@ import React from 'react';
 import './Footer.css';
 import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
+import balance from '../imgs/balance.png';
 
 function Footer() {
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Junte-se ao time para receber novidades semanais sobre o o universo do cinema. 
+          Cadastra-se e solucione todas suas dúvidas sobre a lei brasileira. 
         </p>
         <p className='footer-subscription-text'>
           Você pode cancelar sua inscrição a qualquer momento.
         </p>
+
         <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
-          </form>
+        
+            <Button buttonStyle='btn--outline'>CADASTRAR</Button>
+          
         </div>
       </section>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+            <h2>Informação</h2>
+            <Link to='/sobre-nos'>Sobre nós</Link>
+            <Link to='/areas-de-atuacao'>Áreas de atuação</Link>
+            <Link to='/advogados-parceiros'>Advogados parceiros</Link>
+            <Link to='/investidores'>Investidores</Link>
+            <Link to='/termos-de-servico'>Termos de Serviço</Link>
           </div>
           <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+            <h2>Contato</h2>
+            <Link to='/suporte'>Suporte</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Videos</h2>
+          {/* <div class='footer-link-items'>
+            <h2>Dúvidas</h2>
             <Link to='/'>Submit Video</Link>
             <Link to='/'>Ambassadors</Link>
             <Link to='/'>Agency</Link>
             <Link to='/'>Influencer</Link>
-          </div>
+          </div> */}
           <div class='footer-link-items'>
-            <h2>Social Media</h2>
+            <h2>Redes Sociais</h2>
             <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
@@ -64,11 +57,11 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              CINELIST
-              <i class="fas fa-film"></i>
+              <img src={balance} />
             </Link>
           </div>
-          <small class='website-rights'>CINELIST © 2021</small>
+          
+          <small class='website-rights'>DIREITO GURU © 2021</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
