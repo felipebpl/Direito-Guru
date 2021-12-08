@@ -12,3 +12,12 @@ class UserSerializer(serializers.ModelSerializer):
         user = User.objects.create_user(**validated_data)
         Token.objects.create(user=user)
         return user
+
+
+
+from .models import Feed
+
+class FeedSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Feed
+        fields = ['id', 'area', 'duvida', 'data']
