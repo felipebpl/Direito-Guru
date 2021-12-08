@@ -57,7 +57,7 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              <img src={balance} />
+              <img src={balance} alt='balance' />
             </Link>
           </div>
           
